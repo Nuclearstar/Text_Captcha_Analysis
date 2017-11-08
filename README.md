@@ -15,8 +15,12 @@ The lexer parsing of text captcha is done in 4 diﬀerent phases.
 • The fourth phase is Head selection. Here we categorize into digits, relations, range of values, count of body parts, colour,name, mathematical, positional,etc based upon the results obtained from fetch and clean phases and return the processed data. Here in this phase we mainly make use of retrieval based NLP where in required data sets are already provided in the form of list for head selection process. 
 
 • The last part is translation which combines all 4 phases together and helps in solving text captcha challenge.
-– First we obtain text captcha from ”http://api.textcaptcha.com”.
-– Send it to fetch and clean phase to obtain required tokens.
-– Then send the token one by one to scan phase to know what kind of token it is.
-– The scanned tokens are then sent to head selection to know which all categories/levels, the tokens fall into.
-– After the head selection is done the required answer for the challenge is ready and is properly printed on the terminal window.
+1) First we obtain text captcha from ”http://api.textcaptcha.com”.
+
+2)  Send it to fetch and clean phase to obtain required tokens.
+
+3) Then send the token one by one to scan phase to know what kind of token it is.
+
+4) The scanned tokens are then sent to head selection to know which all categories/levels, the tokens fall into.
+
+5) After the head selection is done the required answer for the challenge is ready and is properly printed on the terminal window.
